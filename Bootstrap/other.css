@@ -1,0 +1,24 @@
+.show-grid [class ^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+}
+.form-align-left{
+    float: left;
+}
+.form-align-right{
+    float: right;
+}
+body{
+    background-color:white;
+    /*background: -webkit-linear-gradient(left, red 100px, yellow 200px);*/
+}
+button{
+    display: table-cell;
+}
+/*img{*/
+    /*width:;*/
+/*}*/

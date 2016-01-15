@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>块级元素水平，垂直居中</title>
+        <meta charset="utf-8">
+        <style>
+            .wrapper {
+                height: 600px;
+                border: 1px solid gray;
+                position: relative;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                background: gold;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -50px;
+                margin-top: -50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box">可能</div>
+        </div>
+    </body>
+</html>

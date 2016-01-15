@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="other.css">
+    <!--[if IE]> <[endif]-->
+    <!--[if gte IE6]> <[endif]-->
+    <!--<style>
+        @media (min-width:800px){
+
+        }
+    </style>-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group" id="f">
+                <button type="button" class="btn btn-default">可能</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">可能</button>
+            </div>
+             <div class="btn-group ">
+                 <button type="button" class="btn btn-danger">可能</button>
+             </div>
+        </div>
+        <!--<div class="btn-group">
+            <div class="btn-group">
+                <button type="reset" class="btn">可能</button>
+            </div>
+            <div class="btn-group">
+                <button type="reset" class="btn">可能</button>
+            </div>
+            <div class="btn-group">
+                <button type="reset" class="btn">可能</button>
+            </div>
+        </div>-->
+    </div>
+
+    <div class="container-fluid">
+        <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                    <li class="dropdown-header">很好</li>
+                    <li role="presentation" class="divider"></li>
+                    <li class="disabled"><a href="#" role="menuitem">可能</a> </li>
+                    <li><a href="#" role="menuitem">可能</a> </li>
+                    <li><a href="#" role="menuitem">可能</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid table-responsive">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <thead>
+                <tr class="active">
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                </tr>
+                <tr>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                </tr>
+                <tr>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                    <td>表格内容</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-fluid">
+        <textarea autofocus="autofocus">12</textarea>
+    </div>
+    <div class="show-grid container-fluid">
+        <div class="col-sm-10 btn-sm">
+            12
+        </div>
+        <div class="col-sm-1 btn-sm col-sm-offset-1">
+            12
+        </div>
+    </div><br/>
+    <div class="show-grid container-fluid">
+        <div class="pull-right visible-xs">
+            <button class="btn btn-primary">Click</button>
+        </div>
+        <div class="col-xs-12 btn-xs">Yes</div>
+        <div class="col-xs-11 btn-xs">Yes</div>
+        <div class="col-xs-10 btn-xs">Yes</div>
+    </div>
+
+    <div class="container-fluid">
+        <form>
+            <fieldset class="container-fluid btn btn-primary" >
+                <legend class="btn btn-warning">
+                    Personal Particular
+                </legend>
+                <!--<div class="btn btn-info">-->
+                 <table>
+                     <tr>
+                         <td>
+                            <label style="float: left" for="name" >
+                                Name:
+                            </label>
+                         </td>
+                         <!--<td><pre>           </pre></td>-->
+                         <td>
+                            <input type="text" id="name" name="name"/>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                            <label style="float: left" for="email">E-mail:</label>
+                         </td>
+                         <!--<td>&nbsp</td>-->
+                         <td>
+                            <input type="email" id="email" name="email" />
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <label style="float: left" for="subject">
+                                 Subject:
+                             </label>
+                         </td>
+                         <!--<td>&nbsp</td>-->
+                         <td>
+                             <input type="text" id="subject" name="subject" />
+                         </td>
+                     </tr>
+                     <tr>
+                         <td valign="top">
+                             <label for="message" >
+                                 Message Body:
+                             </label>
+                         </td>
+                         <!--<td>&nbsp</td>-->
+                         <td valign="top">
+                             <textarea style="float: left" id="message" name="message" ></textarea>
+                         </td>
+                     </tr>
+                 </table>
+                <!--</div>-->
+            </fieldset>
+        </form>
+    </div><br/>
+
+    <div class="container-fluid">
+        <!--<div class="btn">-->
+        <select>
+            <option >Sony VAIO PRO 13</option>
+            <option >Dell XPS 13</option>
+        </select><br/>
+        <a href="#Sony">Sony VAIO PRO 13</a><br/>
+        <a href="#Dell">Dell XPS 13</a>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <a id="Sony"><img src="01.jpg"  title="Sony VAIO PRO 13" name="Sony" width="540" height="376.5" class="img-rounded img-responsive"></a>
+        <br/>
+        <a id="Dell"><img src="02.jpg"  title="Sony VAIO PRO 13" name="Dell" width="540" height="360" class="img-rounded img-responsive"></a>
+    </div>
+
+    <script src="jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="with.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

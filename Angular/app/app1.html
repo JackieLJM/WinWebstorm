@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body>
+    <div ng-controller="MyController">
+        <h1>Hello {{clock.now | date: "fullDate"}}!</h1>
+    </div>
+    
+    <div ng-controller="MyControler1">
+        <input ng-model="to" type="text" placeholder="Recipient">
+        <br/><br/>
+        <textarea ng-model="myemail" name="" id="" cols="30" rows="10"></textarea>
+        <br/><br/>
+        <p>{{pre}}</p>
+    </div>    
+</body>
+</html>

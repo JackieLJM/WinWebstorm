@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            height: 100%;
+        }
+    </style>
+    <!--[if IE6]><[endif]-->
+</head>
+<body>
+    <div class="container">
+        <section>第一</section>
+        <section>第二</section>
+        <section>第三</section>
+        <section>第四</section>
+        <time datetime="2015-07-01" pubdate></time>
+
+
+        <label id="form2">
+                <input type="text" value="可能"/>
+        </label>
+        <input type="button" id="form1" value="也许" onclick="change()"/>
+        <!--label的id属性和js调用label的control属性的搭配使用，实现设置默认值-->
+        <form action="" id="form" >
+            <textarea name="a" id="a" cols="30" rows="10" form="form"></textarea>
+        </form>
+        <!--form的id属性和textarea的form属性挂钩-->
+        <input type="text" list="greetings" required autocomplete="on"/>
+        <datalist id="greetings">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </datalist>
+        <!--文本框的list属性和datalist搭配使用，实现文本框下拉菜单-->
+        <form action="" method="post">
+            <input type="text" list="greetings" pattern="{1-3}{3}"/>
+            <input type="submit"/>
+        </form>
+        <!--文本框的list属性和pattern属性会冲突，导致list属性无用-->
+        <form action="">
+            <input type="text" name="text"/>
+            <input type="button" value="文本框选择方向" onclick="A()"/>
+        </form>
+        <!--用form里的name属性和js调用其selectionDirection属性搭配使用，实现判断用户选择文本的方向-->
+        <input type="checkbox" indeterminate id="b"/>
+        <!--添加一种未定义的选择按钮状态-->
+
+
+        <input type="datetime-local" name=""/>
+        <input type="number" step="5" min="10" max="100" id="c">
+        <input type="search"/>
+        <br/>
+        <input type="color" onchange=""/>
+        <br/>
+        <input type="range" step="5" id="d1" value="0" onchange="D()"/>
+        <output id="d2">10</output>
+        <!--实现百分比进度条与数据绑定同步显示-->
+
+
+        <details>
+            <summary>可能</summary>
+            <p>也许</p>
+        </details>
+        <!--实现分级信息-->
+        <progress id="e" max="100"><span></span></progress>
+        <!--实现进度条-->
+        <meter value="40%"></meter>
+
+    </div>
+    <script>
+        function change(){
+            var form2=document.getElementById("form2").control;
+//            form1.labels[1].innerHTML="或者";
+//            var a=form2.control;
+            form2.value="或者";
+        }<!--实现设置默认值-->
+
+        function A(){
+            var direction=document.forms[2]["text"].selectionDirection;
+            alert(direction);
+        }
+
+        function B(){
+            var b=document.getElementById("b").indeterminate;
+            b=true;
+        }
+
+        function C(){
+            var c=document.getElementById("c").valueAsNumber;
+        }
+
+        function D(){
+            var num=document.getElementById("d1").value;
+            document.getElementById("d2").value=num;
+        }
+
+        function progress(value){
+            var pro=document.getElementById("e");
+            pro.value=value;
+            pro.getElementsByTagName("span").textContent=value;
+        }
+        function thread_one(){
+
+        }
+//        实现进度条
+    </script>
+</body>
+</html>

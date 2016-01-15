@@ -1,0 +1,10 @@
+.div {
+  background: red; }
+
+#content aside {
+  color: red;
+  /*able*/ }
+  body .ie #content aside {
+    color: green; }
+
+/*# sourceMappingURL=text.css.map */

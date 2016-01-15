@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>类选择符</title>
+<style type="text/css">
+<!--
+	.red{color: red}
+	.green{color: green}
+	a.bold{font-weight: bolder;}
+	/*table tr td{text-decoration: line-through;}*/
+	td[class="red"]{text-decoration: line-through;}
+	a[class|="red"]{font-style: italic;}
+</style>
+</head>
+
+<body>
+	<a href="#" class="red">这是一个class属性值位red的超链接</a>
+	<a href="#" class="green">这是一个class属性值位green的超链接</a>
+	<a href="#" class="bold">这是一个class属性值位bold的超链接</a>
+	<table border="1">
+		<tr>
+			<td class="red" >这是一个class属性值为red的单元格</td>
+		</tr>
+		<tr>
+			<td class="green">这是一个class属性值为green的单元格</td>
+		</tr>
+		<tr>
+			<td class="bold">这是一个class属性值为bold的单元格</td>
+		</tr>
+	</table>
+</body>
+</html>

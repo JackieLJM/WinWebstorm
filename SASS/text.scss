@@ -1,0 +1,20 @@
+.div{
+	background:red;
+}
+
+#content aside{
+	color:red;
+	body .ie &{color:green};  /*able*/
+}
+
+// $color:"color";
+// #content footer{
+// 	$color:red;
+// }
+
+nav{
+	background:blue;
+}
+
+// @@import "compass/css3";
+

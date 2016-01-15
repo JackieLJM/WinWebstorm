@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		for(var key in Node){
+			console.log(key+"="+Node[key]);
+		}
+		var frag = document.creatDocumentFragment();
+		["bule","white","black"].forEach(function (e) {
+			var li = document.creatElement("li");
+			li.textContent = e;
+			frag.appendChild(li);
+		});
+		document.querySelector("body").appendChild(frag);
+		console.log(farg);
+	</script>
+	<script async src="dom.js" onload="console.log('Done!');"></script>
+</body>
+</html>

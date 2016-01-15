@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <div id="myId"></div>
+
+    <form action="">
+        <button> button </button>
+        <input type="submit" value="input submit"/>
+        <input type="button" value="input button"/>
+    </form>
+
+    <button id="customBtn" value="test" type="button">&#x6309;&#x94AE;</button> 
+    <input type="button" id="test1" value="get attr"/>
+    <input type="button" id="test2" value="get val"/>
+
+    <script type="text/javascript" src="jQuery/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+        window.onload = function(){
+            var para = document.createElement('p');
+
+            var info = 'nodeName: '; 
+            info += para.nodeName;
+            info += ' nodeType: '; 
+            info += para.nodeType;
+            alert(info);
+
+            para.innerHTML = info;
+            var div = document.getElementById("myId");
+            div.appendChild(para);
+        }
+
+        $(function() {
+            $('#test1').click(function() {
+                alert($('#customBtn').attr('value'));    
+            });
+            $('#test2').click(function() {
+                alert($('#customBtn').val());    
+            });
+        });
+  </script>
+</body>
+</html>
